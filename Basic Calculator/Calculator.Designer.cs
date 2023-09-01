@@ -38,13 +38,13 @@
             btn3 = new Button();
             btn6 = new Button();
             btn9 = new Button();
-            btnClearAll = new Button();
+            btnClear = new Button();
             btnMultiply = new Button();
             btnAdd = new Button();
             btnSub = new Button();
             btnDivide = new Button();
             btnCalculate = new Button();
-            button1 = new Button();
+            btnClearAll = new Button();
             btn0 = new Button();
             SuspendLayout();
             // 
@@ -160,15 +160,16 @@
             btn9.UseVisualStyleBackColor = true;
             btn9.Click += btn9_Click;
             // 
-            // btnClearAll
+            // btnClear
             // 
-            btnClearAll.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            btnClearAll.Location = new Point(310, 269);
-            btnClearAll.Name = "btnClearAll";
-            btnClearAll.Size = new Size(182, 78);
-            btnClearAll.TabIndex = 12;
-            btnClearAll.Text = "Clear";
-            btnClearAll.UseVisualStyleBackColor = true;
+            btnClear.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            btnClear.Location = new Point(310, 269);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(182, 78);
+            btnClear.TabIndex = 12;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
             // 
             // btnMultiply
             // 
@@ -225,15 +226,15 @@
             btnCalculate.UseVisualStyleBackColor = true;
             btnCalculate.Click += btnCalculate_Click;
             // 
-            // button1
+            // btnClearAll
             // 
-            button1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(311, 366);
-            button1.Name = "button1";
-            button1.Size = new Size(182, 78);
-            button1.TabIndex = 16;
-            button1.Text = "Clear All";
-            button1.UseVisualStyleBackColor = true;
+            btnClearAll.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            btnClearAll.Location = new Point(311, 366);
+            btnClearAll.Name = "btnClearAll";
+            btnClearAll.Size = new Size(182, 78);
+            btnClearAll.TabIndex = 16;
+            btnClearAll.Text = "Clear All";
+            btnClearAll.UseVisualStyleBackColor = true;
             // 
             // btn0
             // 
@@ -252,11 +253,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(515, 456);
             Controls.Add(btn0);
-            Controls.Add(button1);
+            Controls.Add(btnClearAll);
             Controls.Add(btnCalculate);
             Controls.Add(btnDivide);
             Controls.Add(btnSub);
-            Controls.Add(btnClearAll);
+            Controls.Add(btnClear);
             Controls.Add(btnMultiply);
             Controls.Add(btnAdd);
             Controls.Add(btn9);
@@ -287,13 +288,13 @@
         private Button btn3;
         private Button btn6;
         private Button btn9;
-        private Button btnClearAll;
+        private Button btnClear;
         private Button btnMultiply;
         private Button btnAdd;
         private Button btnSub;
         private Button btnDivide;
         private Button btnCalculate;
-        private Button button1;
+        private Button btnClearAll;
         private Button btn0;
     }
 }
